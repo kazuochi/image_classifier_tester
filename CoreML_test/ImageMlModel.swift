@@ -15,7 +15,8 @@ struct ImageMlModel {
         case Resnet
         case VGG
         case CatOrDog
-        static var count: Int { return MlModels.CatOrDog.hashValue + 1}
+        case Food101
+        static var count: Int { return MlModels.Food101.hashValue + 1}
     }
     
     fileprivate let imageModel: MlModels
@@ -26,6 +27,7 @@ struct ImageMlModel {
     fileprivate lazy var resnet = { Resnet50() }()
     fileprivate lazy var vgg = { VGG16() }()
     fileprivate lazy var catOrDog = { CatOrDog() }()
+    fileprivate lazy var food101 = { Food_101() }()
 
     init() {
         imageModel = .GoogLeNet
@@ -59,6 +61,8 @@ struct ImageMlModel {
             return CGSize(width: 224, height: 224)
         case .CatOrDog:
             return CGSize(width: 150, height: 150)
+        case .Food101:
+            return CGSize(width: 150, height: 150)
         }
     }
     
@@ -74,6 +78,8 @@ struct ImageMlModel {
             return "VGG16"
         case .CatOrDog:
             return "CatOrDog"
+        case .Food101:
+            return "Food101"
         }
     }
     
@@ -89,6 +95,8 @@ struct ImageMlModel {
             return "Detects the dominant objects present in an image from a set of 1000 categories such as trees, animals, food, vehicles, people, and more."
         case .CatOrDog:
             return "Classifies cat or dog"
+        case .Food101:
+            return "Classifies food items from 101 categories"
         }
     }
     
@@ -99,7 +107,8 @@ struct ImageMlModel {
         case .GoogLeNet,
          .Inception,
          .Resnet,
-         .VGG:
+         .VGG,
+         .Food101:
             return 9
         }
     }
@@ -121,6 +130,8 @@ struct ImageMlModel {
                 "dog" : dogProbability,
                 "cat" : 1 - dogProbability
             ]
+        case .Food101:
+            return try food101.prediction(image: image).classLabelProbs
         }
     }
 }

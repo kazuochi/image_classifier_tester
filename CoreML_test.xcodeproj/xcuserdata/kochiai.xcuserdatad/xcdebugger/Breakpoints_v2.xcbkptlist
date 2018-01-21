@@ -259,13 +259,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoreML_test/ImageMlModel.swift"
-            timestampString = "537734580.563637"
+            timestampString = "538256043.3519469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "prediction(image:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

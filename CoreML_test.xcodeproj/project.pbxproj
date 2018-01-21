@@ -11,15 +11,16 @@
 		C2019E701EF2BCDF00A5407B /* PredictionBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2019E6F1EF2BCDF00A5407B /* PredictionBaseViewController.swift */; };
 		C2019E721EF2C1B000A5407B /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2019E711EF2C1A500A5407B /* ReplayKit.framework */; };
 		C2111C6E1EF40CB000D98877 /* ScreenCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2111C6D1EF40CB000D98877 /* ScreenCaptureViewController.swift */; };
-		C228B6411F1C477300CA5096 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C228B6401F1C46A300CA5096 /* GoogLeNetPlaces.mlmodel */; };
-		C228B6421F1C477300CA5096 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C228B63F1F1C46A300CA5096 /* Inceptionv3.mlmodel */; };
-		C228B6431F1C477300CA5096 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C228B63E1F1C46A300CA5096 /* Resnet50.mlmodel */; };
-		C228B6441F1C477300CA5096 /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C228B63D1F1C46A300CA5096 /* VGG16.mlmodel */; };
 		C247F64D1EF700B60027E34C /* CameraImageCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247F64C1EF700B60027E34C /* CameraImageCapture.swift */; };
 		C2864F781EEDAB8600589134 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2864F771EEDAB7500589134 /* CoreML.framework */; };
 		C2890C591EF59CF60035CB51 /* MlModelPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2890C581EF59CF60035CB51 /* MlModelPickerViewController.swift */; };
 		C295A1141EF22EEB00CE1191 /* ImageMlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C295A1131EF22EEB00CE1191 /* ImageMlModel.swift */; };
-		C2CCD4A31F9CF81D00439919 /* CatOrDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2CCD4A21F9CF81300439919 /* CatOrDog.mlmodel */; };
+		C2A35D2C20151CE400481F24 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2620151CE300481F24 /* GoogLeNetPlaces.mlmodel */; };
+		C2A35D2D20151CE400481F24 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2720151CE300481F24 /* Inceptionv3.mlmodel */; };
+		C2A35D2E20151CE400481F24 /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2820151CE300481F24 /* VGG16.mlmodel */; };
+		C2A35D2F20151CE400481F24 /* Food_101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2920151CE300481F24 /* Food_101.mlmodel */; };
+		C2A35D3020151CE400481F24 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2A20151CE300481F24 /* Resnet50.mlmodel */; };
+		C2A35D3120151CE400481F24 /* CatOrDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2B20151CE300481F24 /* CatOrDog.mlmodel */; };
 		C2CDB5791EECEC8200863E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDB5781EECEC8200863E8D /* AppDelegate.swift */; };
 		C2CDB57B1EECEC8200863E8D /* CameraPredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDB57A1EECEC8200863E8D /* CameraPredictionViewController.swift */; };
 		C2CDB57E1EECEC8200863E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDB57C1EECEC8200863E8D /* Main.storyboard */; };
@@ -46,15 +47,16 @@
 		C2019E6F1EF2BCDF00A5407B /* PredictionBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionBaseViewController.swift; sourceTree = "<group>"; };
 		C2019E711EF2C1A500A5407B /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		C2111C6D1EF40CB000D98877 /* ScreenCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureViewController.swift; sourceTree = "<group>"; };
-		C228B63D1F1C46A300CA5096 /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
-		C228B63E1F1C46A300CA5096 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		C228B63F1F1C46A300CA5096 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		C228B6401F1C46A300CA5096 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 		C247F64C1EF700B60027E34C /* CameraImageCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraImageCapture.swift; sourceTree = "<group>"; };
 		C2864F771EEDAB7500589134 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		C2890C581EF59CF60035CB51 /* MlModelPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MlModelPickerViewController.swift; sourceTree = "<group>"; };
 		C295A1131EF22EEB00CE1191 /* ImageMlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMlModel.swift; sourceTree = "<group>"; };
-		C2CCD4A21F9CF81300439919 /* CatOrDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatOrDog.mlmodel; sourceTree = "<group>"; };
+		C2A35D2620151CE300481F24 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = mlmodels/GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		C2A35D2720151CE300481F24 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = mlmodels/Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		C2A35D2820151CE300481F24 /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VGG16.mlmodel; path = mlmodels/VGG16.mlmodel; sourceTree = "<group>"; };
+		C2A35D2920151CE300481F24 /* Food_101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Food_101.mlmodel; path = mlmodels/Food_101.mlmodel; sourceTree = "<group>"; };
+		C2A35D2A20151CE300481F24 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = mlmodels/Resnet50.mlmodel; sourceTree = "<group>"; };
+		C2A35D2B20151CE300481F24 /* CatOrDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatOrDog.mlmodel; path = mlmodels/CatOrDog.mlmodel; sourceTree = "<group>"; };
 		C2CDB5751EECEC8200863E8D /* CoreML_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CDB5781EECEC8200863E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CDB57A1EECEC8200863E8D /* CameraPredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPredictionViewController.swift; sourceTree = "<group>"; };
@@ -102,11 +104,12 @@
 		C2CDB56C1EECEC8200863E8D = {
 			isa = PBXGroup;
 			children = (
-				C228B6401F1C46A300CA5096 /* GoogLeNetPlaces.mlmodel */,
-				C228B63F1F1C46A300CA5096 /* Inceptionv3.mlmodel */,
-				C228B63E1F1C46A300CA5096 /* Resnet50.mlmodel */,
-				C228B63D1F1C46A300CA5096 /* VGG16.mlmodel */,
-				C2CCD4A21F9CF81300439919 /* CatOrDog.mlmodel */,
+				C2A35D2B20151CE300481F24 /* CatOrDog.mlmodel */,
+				C2A35D2920151CE300481F24 /* Food_101.mlmodel */,
+				C2A35D2620151CE300481F24 /* GoogLeNetPlaces.mlmodel */,
+				C2A35D2720151CE300481F24 /* Inceptionv3.mlmodel */,
+				C2A35D2A20151CE300481F24 /* Resnet50.mlmodel */,
+				C2A35D2820151CE300481F24 /* VGG16.mlmodel */,
 				C2CDB5AD1EECF0DC00863E8D /* VideoCapture */,
 				C2CDB5771EECEC8200863E8D /* CoreML_test */,
 				C2CDB58C1EECEC8200863E8D /* CoreML_testTests */,
@@ -264,22 +267,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C228B6411F1C477300CA5096 /* GoogLeNetPlaces.mlmodel in Sources */,
-				C228B6421F1C477300CA5096 /* Inceptionv3.mlmodel in Sources */,
-				C228B6431F1C477300CA5096 /* Resnet50.mlmodel in Sources */,
-				C228B6441F1C477300CA5096 /* VGG16.mlmodel in Sources */,
+				C2A35D3120151CE400481F24 /* CatOrDog.mlmodel in Sources */,
 				C2CDB5B11EECF0E800863E8D /* VideoCapture.swift in Sources */,
 				C2111C6E1EF40CB000D98877 /* ScreenCaptureViewController.swift in Sources */,
+				C2A35D2D20151CE400481F24 /* Inceptionv3.mlmodel in Sources */,
 				C2019E701EF2BCDF00A5407B /* PredictionBaseViewController.swift in Sources */,
 				C2CDB57B1EECEC8200863E8D /* CameraPredictionViewController.swift in Sources */,
 				C295A1141EF22EEB00CE1191 /* ImageMlModel.swift in Sources */,
 				C2CDB5791EECEC8200863E8D /* AppDelegate.swift in Sources */,
 				C247F64D1EF700B60027E34C /* CameraImageCapture.swift in Sources */,
-				C2CCD4A31F9CF81D00439919 /* CatOrDog.mlmodel in Sources */,
+				C2A35D2F20151CE400481F24 /* Food_101.mlmodel in Sources */,
+				C2A35D2E20151CE400481F24 /* VGG16.mlmodel in Sources */,
 				C2CDB5B21EECF0EB00863E8D /* VideoCameraType.swift in Sources */,
 				C2CDB5B31EECF0ED00863E8D /* AVCaptureDevice+Extension.swift in Sources */,
 				C2890C591EF59CF60035CB51 /* MlModelPickerViewController.swift in Sources */,
 				C2019E6E1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift in Sources */,
+				C2A35D3020151CE400481F24 /* Resnet50.mlmodel in Sources */,
+				C2A35D2C20151CE400481F24 /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
