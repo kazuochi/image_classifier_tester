@@ -10,25 +10,25 @@ import UIKit
 
 
 protocol MlModelPickerViewControllerDelegate: class {
-    func didSelectModel(modelPickerViewController:MlModelPickerViewController, selectedModel:ImageMlModel)
+    func didSelectModel(modelPickerViewController:MlModelPickerViewController, selectedModel:ImageClassificationModel)
 }
 
 class MlModelPickerViewController: UITableViewController {
     
     weak var delegate: MlModelPickerViewControllerDelegate?
     
-    lazy var models: [ImageMlModel] = {
-        return (0..<ImageMlModel.MlModels.count).reduce([ImageMlModel](), { (result, rawValue) in
+    lazy var models: [ImageClassificationModel] = {
+        return (0..<ImageMlModel.count).reduce([ImageClassificationModel](), { (result, rawValue) in
             var models = result
             guard let model =  ImageMlModel(rawValue: rawValue) else {
-                fatalError("ImageMlModel could not initialized")
+                fatalError("ImageMlModel could not be initialized")
             }
-            models.append(model)
+            models.append(model.mlmodel)
             return models
         })
     }()
     
-    var currentModel: ImageMlModel! = ImageMlModel(rawValue:2)
+    var currentModel = ImageMlModel(rawValue: 0)!.mlmodel
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,12 @@ class MlModelPickerViewController: UITableViewController {
         cell.detailTextLabel?.text = models[row].description
         cell.detailTextLabel?.numberOfLines = 0
         cell.detailTextLabel?.lineBreakMode = .byWordWrapping
-        cell.accessoryType = models.index{ $0 == currentModel } == row ? .checkmark : .none
+        
+        let currentModelIndex = models.index { (model: ImageClassificationModel) -> Bool in
+            return model.name == self.currentModel.name
+        }
+        
+        cell.accessoryType = currentModelIndex == row ? .checkmark : .none
         
         return cell
     }

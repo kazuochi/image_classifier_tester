@@ -1,137 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eF8-eq-RHC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eF8-eq-RHC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Camera Prediction View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="CameraPredictionViewController" customModule="CoreML_test" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-Ji-WeU">
-                                <rect key="frame" x="0.0" y="604" width="375" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40972816780821919" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="czN-NC-Euu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tRM-Uy-bf3">
-                                <rect key="frame" x="16" y="20" width="343" height="29"/>
-                                <segments>
-                                    <segment title="GoogLeNet"/>
-                                    <segment title="Inceptionv3"/>
-                                    <segment title="Resnet50"/>
-                                    <segment title="VGG16"/>
-                                </segments>
-                                <connections>
-                                    <action selector="modelValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="xkf-i2-sWK"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="UmT-Ji-WeU" secondAttribute="trailing" id="2Z2-hc-a4O"/>
-                            <constraint firstAttribute="trailing" secondItem="tRM-Uy-bf3" secondAttribute="trailing" constant="16" id="604-9Y-oEa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UmT-Ji-WeU" secondAttribute="bottom" constant="8" id="6qE-fE-07D"/>
-                            <constraint firstItem="tRM-Uy-bf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Ik-RD-raV"/>
-                            <constraint firstItem="UmT-Ji-WeU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LAr-DQ-6dl"/>
-                            <constraint firstItem="tRM-Uy-bf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="NM8-qJ-mbp"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="modelSwitcher" destination="tRM-Uy-bf3" id="va8-KG-Dcv"/>
-                        <outlet property="predictionLabel" destination="UmT-Ji-WeU" id="qeM-g6-z5v"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
-        </scene>
-        <!--Screen Video Capture Prediction View Controller-->
-        <scene sceneID="7J4-G6-eQx">
-            <objects>
-                <viewController id="caa-fc-UCN" customClass="ScreenVideoCapturePredictionViewController" customModule="CoreML_test" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uXM-cP-JlZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="mOL-Bd-WhV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Xw4-sq-TXK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-33-0v8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if1-Qn-D0L">
-                                <rect key="frame" x="0.0" y="604" width="375" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40972816779999999" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="z0X-hh-lEL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-c2-9vm">
-                                <rect key="frame" x="16" y="20" width="343" height="29"/>
-                                <segments>
-                                    <segment title="GoogLeNet"/>
-                                    <segment title="Inceptionv3"/>
-                                    <segment title="Resnet50"/>
-                                    <segment title="VGG16"/>
-                                </segments>
-                                <connections>
-                                    <action selector="modelValueChanged:" destination="caa-fc-UCN" eventType="valueChanged" id="17h-JB-rAv"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="2Bh-c2-9vm" firstAttribute="leading" secondItem="Xw4-sq-TXK" secondAttribute="leading" constant="16" id="R0V-XI-Uqz"/>
-                            <constraint firstItem="if1-Qn-D0L" firstAttribute="leading" secondItem="Xw4-sq-TXK" secondAttribute="leading" id="VmU-ty-MnK"/>
-                            <constraint firstItem="mOL-Bd-WhV" firstAttribute="top" secondItem="if1-Qn-D0L" secondAttribute="bottom" constant="8" id="VzP-ko-SDy"/>
-                            <constraint firstAttribute="trailing" secondItem="QuV-33-0v8" secondAttribute="trailing" id="azQ-li-HeV"/>
-                            <constraint firstAttribute="trailing" secondItem="2Bh-c2-9vm" secondAttribute="trailing" constant="16" id="hIo-hb-G98"/>
-                            <constraint firstItem="mOL-Bd-WhV" firstAttribute="top" secondItem="QuV-33-0v8" secondAttribute="bottom" id="s3N-JU-EpK"/>
-                            <constraint firstItem="QuV-33-0v8" firstAttribute="top" secondItem="uXM-cP-JlZ" secondAttribute="bottom" constant="-20" id="snt-AA-sFI"/>
-                            <constraint firstAttribute="trailing" secondItem="if1-Qn-D0L" secondAttribute="trailing" id="vvx-rN-ZBR"/>
-                            <constraint firstItem="QuV-33-0v8" firstAttribute="leading" secondItem="Xw4-sq-TXK" secondAttribute="leading" id="wnt-k6-we4"/>
-                            <constraint firstItem="2Bh-c2-9vm" firstAttribute="top" secondItem="uXM-cP-JlZ" secondAttribute="bottom" id="xAS-18-i2X"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="modelSwitcher" destination="2Bh-c2-9vm" id="Iid-mw-aBa"/>
-                        <outlet property="predictionLabel" destination="if1-Qn-D0L" id="hTl-wf-Rgv"/>
-                        <outlet property="webView" destination="QuV-33-0v8" id="JWq-nT-chI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cO2-Gu-ZUx" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="864.91754122938539"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dSa-3U-gHa">
             <objects>
                 <navigationController id="eF8-eq-RHC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BcE-Za-BRg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

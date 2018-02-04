@@ -258,45 +258,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreML_test/ImageMlModel.swift"
-            timestampString = "538256043.3519469"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/CoreML_test-fembvpisgplihtdiiycxklvrwpru/Build/Intermediates.noindex/CoreML_test.build/Debug-iphonesimulator/CoreML_test.build/DerivedSources/CoreMLGenerated/GoogLeNetPlaces/GoogLeNetPlaces.swift"
+            timestampString = "538632826.0599231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "prediction(image:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreML_test/ScreenCaptureViewController.swift"
-            timestampString = "537734580.56399"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "resize(imageBuffer:to:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreML_test/ScreenCaptureViewController.swift"
-            timestampString = "537734580.564054"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "getPixelBufferToPredict()"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "prediction(input:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -10,7 +10,7 @@ import UIKit
 
 class ScreenCaptureViewController: UIViewController {
     
-    fileprivate struct Constants {
+    fileprivate struct Constant {
         static let pridictTimeInterval: TimeInterval = 1.0
         static let numOfPrediction: Int = 9
         static let initialWebsite = "https://images.google.com"
@@ -28,7 +28,7 @@ class ScreenCaptureViewController: UIViewController {
     @IBOutlet weak var predictionLabel: UILabel!
     
     fileprivate var cameraImageCapture: VideoCapture!
-    fileprivate var currentModel = ImageMlModel()
+    fileprivate var currentModel: ImageClassificationModel = ImageMlModel.Inception.mlmodel
     
     fileprivate var currentImageSource: ImageSource {
         return ImageSource(rawValue:imageSourceSegmentedControl.selectedSegmentIndex)!
@@ -44,7 +44,7 @@ class ScreenCaptureViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        timer = Timer.scheduledTimer(timeInterval: Constants.pridictTimeInterval,
+        timer = Timer.scheduledTimer(timeInterval: Constant.pridictTimeInterval,
                                      target: self,
                                      selector: #selector(predict),
                                      userInfo: nil,
@@ -62,7 +62,7 @@ class ScreenCaptureViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == Constants.modelPickerSegueName {
+        if segue.identifier == Constant.modelPickerSegueName {
             let modelPickerViewController = segue.destination as? MlModelPickerViewController
             modelPickerViewController?.currentModel = currentModel
             modelPickerViewController?.delegate = self
@@ -80,7 +80,7 @@ class ScreenCaptureViewController: UIViewController {
     fileprivate func setup() {
         switch (currentImageSource) {
         case .browser:
-            webView.loadRequest(URLRequest(url: URL(string:Constants.initialWebsite)!))
+            webView.loadRequest(URLRequest(url: URL(string:Constant.initialWebsite)!))
             cameraImageCapture?.stopCapture()
             
         case .camera:
@@ -128,7 +128,7 @@ class ScreenCaptureViewController: UIViewController {
                 
                 let predictionText = pred.sorted {
                     $0.value > $1.value
-                    }[0..<self.currentModel.numOfPredictionUpperBound].reduce("", { (result, arg1) -> String in
+                    }[0..<self.numOfPredictionUpperBound(predCount: pred.count)].reduce("", { (result, arg1) -> String in
                         let (label, prob) = arg1
                         let prediction = result + "\(label) - \(String(format: "%.1f", prob * 100))%\n"
                         print(prediction)
@@ -141,6 +141,15 @@ class ScreenCaptureViewController: UIViewController {
             } catch {
                 fatalError("Unexpected error ocurred: \(error.localizedDescription).")
             }
+        }
+    }
+    
+    private func numOfPredictionUpperBound(predCount: Int) -> Int {
+        if predCount > 9 {
+            return 9
+        }
+        else {
+            return predCount
         }
     }
     
@@ -190,7 +199,7 @@ class ScreenCaptureViewController: UIViewController {
 }
 
 extension ScreenCaptureViewController: MlModelPickerViewControllerDelegate {
-    func didSelectModel(modelPickerViewController: MlModelPickerViewController, selectedModel: ImageMlModel) {
+    func didSelectModel(modelPickerViewController: MlModelPickerViewController, selectedModel: ImageClassificationModel) {
         currentModel = selectedModel
     }
 }

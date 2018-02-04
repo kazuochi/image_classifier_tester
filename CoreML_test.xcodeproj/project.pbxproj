@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2019E6E1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2019E6D1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift */; };
-		C2019E701EF2BCDF00A5407B /* PredictionBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2019E6F1EF2BCDF00A5407B /* PredictionBaseViewController.swift */; };
 		C2019E721EF2C1B000A5407B /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2019E711EF2C1A500A5407B /* ReplayKit.framework */; };
 		C2111C6E1EF40CB000D98877 /* ScreenCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2111C6D1EF40CB000D98877 /* ScreenCaptureViewController.swift */; };
 		C247F64D1EF700B60027E34C /* CameraImageCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247F64C1EF700B60027E34C /* CameraImageCapture.swift */; };
@@ -21,8 +19,8 @@
 		C2A35D2F20151CE400481F24 /* Food_101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2920151CE300481F24 /* Food_101.mlmodel */; };
 		C2A35D3020151CE400481F24 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2A20151CE300481F24 /* Resnet50.mlmodel */; };
 		C2A35D3120151CE400481F24 /* CatOrDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2A35D2B20151CE300481F24 /* CatOrDog.mlmodel */; };
+		C2B4CC612027AAC700AC7920 /* ImageClassificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4CC602027AAC700AC7920 /* ImageClassificationModel.swift */; };
 		C2CDB5791EECEC8200863E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDB5781EECEC8200863E8D /* AppDelegate.swift */; };
-		C2CDB57B1EECEC8200863E8D /* CameraPredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDB57A1EECEC8200863E8D /* CameraPredictionViewController.swift */; };
 		C2CDB57E1EECEC8200863E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDB57C1EECEC8200863E8D /* Main.storyboard */; };
 		C2CDB5801EECEC8200863E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CDB57F1EECEC8200863E8D /* Assets.xcassets */; };
 		C2CDB5831EECEC8200863E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDB5811EECEC8200863E8D /* LaunchScreen.storyboard */; };
@@ -43,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C2019E6D1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenVideoCapturePredictionViewController.swift; sourceTree = "<group>"; };
-		C2019E6F1EF2BCDF00A5407B /* PredictionBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionBaseViewController.swift; sourceTree = "<group>"; };
 		C2019E711EF2C1A500A5407B /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		C2111C6D1EF40CB000D98877 /* ScreenCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureViewController.swift; sourceTree = "<group>"; };
 		C247F64C1EF700B60027E34C /* CameraImageCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraImageCapture.swift; sourceTree = "<group>"; };
@@ -57,9 +53,9 @@
 		C2A35D2920151CE300481F24 /* Food_101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Food_101.mlmodel; path = mlmodels/Food_101.mlmodel; sourceTree = "<group>"; };
 		C2A35D2A20151CE300481F24 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = mlmodels/Resnet50.mlmodel; sourceTree = "<group>"; };
 		C2A35D2B20151CE300481F24 /* CatOrDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatOrDog.mlmodel; path = mlmodels/CatOrDog.mlmodel; sourceTree = "<group>"; };
+		C2B4CC602027AAC700AC7920 /* ImageClassificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationModel.swift; sourceTree = "<group>"; };
 		C2CDB5751EECEC8200863E8D /* CoreML_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CDB5781EECEC8200863E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2CDB57A1EECEC8200863E8D /* CameraPredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPredictionViewController.swift; sourceTree = "<group>"; };
 		C2CDB57D1EECEC8200863E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2CDB57F1EECEC8200863E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CDB5821EECEC8200863E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,12 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				C2CDB5781EECEC8200863E8D /* AppDelegate.swift */,
-				C2019E6F1EF2BCDF00A5407B /* PredictionBaseViewController.swift */,
-				C2CDB57A1EECEC8200863E8D /* CameraPredictionViewController.swift */,
-				C2019E6D1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift */,
 				C247F64C1EF700B60027E34C /* CameraImageCapture.swift */,
 				C2111C6D1EF40CB000D98877 /* ScreenCaptureViewController.swift */,
 				C295A1131EF22EEB00CE1191 /* ImageMlModel.swift */,
+				C2B4CC602027AAC700AC7920 /* ImageClassificationModel.swift */,
 				C2890C581EF59CF60035CB51 /* MlModelPickerViewController.swift */,
 				C2CDB57C1EECEC8200863E8D /* Main.storyboard */,
 				C2CDB57F1EECEC8200863E8D /* Assets.xcassets */,
@@ -271,17 +265,15 @@
 				C2CDB5B11EECF0E800863E8D /* VideoCapture.swift in Sources */,
 				C2111C6E1EF40CB000D98877 /* ScreenCaptureViewController.swift in Sources */,
 				C2A35D2D20151CE400481F24 /* Inceptionv3.mlmodel in Sources */,
-				C2019E701EF2BCDF00A5407B /* PredictionBaseViewController.swift in Sources */,
-				C2CDB57B1EECEC8200863E8D /* CameraPredictionViewController.swift in Sources */,
 				C295A1141EF22EEB00CE1191 /* ImageMlModel.swift in Sources */,
 				C2CDB5791EECEC8200863E8D /* AppDelegate.swift in Sources */,
 				C247F64D1EF700B60027E34C /* CameraImageCapture.swift in Sources */,
 				C2A35D2F20151CE400481F24 /* Food_101.mlmodel in Sources */,
+				C2B4CC612027AAC700AC7920 /* ImageClassificationModel.swift in Sources */,
 				C2A35D2E20151CE400481F24 /* VGG16.mlmodel in Sources */,
 				C2CDB5B21EECF0EB00863E8D /* VideoCameraType.swift in Sources */,
 				C2CDB5B31EECF0ED00863E8D /* AVCaptureDevice+Extension.swift in Sources */,
 				C2890C591EF59CF60035CB51 /* MlModelPickerViewController.swift in Sources */,
-				C2019E6E1EF2BB6500A5407B /* ScreenVideoCapturePredictionViewController.swift in Sources */,
 				C2A35D3020151CE400481F24 /* Resnet50.mlmodel in Sources */,
 				C2A35D2C20151CE400481F24 /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
